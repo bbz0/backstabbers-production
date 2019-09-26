@@ -1,16 +1,20 @@
+/* animation class before the component 'leaves', with a '-leave' suffix */
 .whitelogo-leave {
 	opacity: 1;
 }
 
+/* animation class as the component 'leaves', with a '-leave-active' suffix */
 .whitelogo-leave.whitelogo-leave-active {
 	opacity: 0;
 	transition: opacity 0.5s ease-out;
 }
 
+/* animation class in initial state with '-enter' suffix */
 .herocontent-enter {
 	opacity: 0;
 }
 
+/* animation class as the component 'enters', with a '-enter-active' suffix */
 .herocontent-enter.herocontent-enter-active {
 	opacity: 1;
 	transition: opacity 0.5s ease-in;

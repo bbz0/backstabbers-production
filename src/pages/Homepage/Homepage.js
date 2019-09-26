@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
-import HeroContent from './HeroContent/HeroContent';
-import FooterContent from '../../components/Footer/FooterContent/FooterContent';
-import Loader from '../../components/Loader/Loader';
+import HeroContent from './HeroContent/HeroContent'; // component that contains main hero text and call to action
+import FooterContent from '../../components/Footer/FooterContent/FooterContent'; // footer text 'content' component
+import Loader from '../../components/Loader/Loader'; // the 'loading' logo component
 import videoBg from './bg.mp4';
 import './animations.css';
 
 class Homepage extends Component {
 
     render() {
-
-        const loadLogo = (this.props.loadLogo) ? <Loader /> : '';
-        const heroContent = (this.props.siteLoaded) ? <HeroContent /> : '';
+        // loadLogo, siteLoaded are props from the main App component
+        const loadLogo = (this.props.loadLogo) ? <Loader /> : ''; // component will fade out if false
+        const heroContent = (this.props.siteLoaded) ? <HeroContent /> : ''; // components will fade in if true
         const footerContent = (this.props.siteLoaded) ? <FooterContent /> : '';
 
         return (
@@ -23,9 +23,10 @@ class Homepage extends Component {
                 <div className="main--content">
                     <div className="container">
                         <div className="hero--content">
-                            <CSSTransitionGroup
-                            transitionName="whitelogo"
-                            transitionLeaveTimeout={500}>
+                            <CSSTransitionGroup // CSS animation transition to display elements
+                            transitionName="whitelogo" // animation class name
+                            transitionLeaveTimeout={500} // the component fades out for 0.5 seconds
+                            >
                                 {loadLogo}
                             </CSSTransitionGroup>
                             <CSSTransitionGroup

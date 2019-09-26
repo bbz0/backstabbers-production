@@ -1,17 +1,21 @@
+/* animation class in initial state with '-enter' suffix */
 .mobilenav-enter {
 	transform: translate(0, -300px);
 }
 
+/* animation class as the component 'enters', with a '-enter-active' suffix */
 .mobilenav-enter.mobilenav-enter-active {
 	transform: translate(0, 0);
 	transition: transform 0.2s ease-in;
 }
 
+/* animation class before the component 'leaves', with a '-leave' suffix */
 .mobilenav-leave {
 	transform: translate(0, 0);
 	transition: transform 0.2s ease-in;
 }
 
+/* animation class as the component 'leaves', with a '-leave-active' suffix */
 .mobilenav-leave.mobilenav-leave-active {
 	transform: translate(0, -300px);
 }
