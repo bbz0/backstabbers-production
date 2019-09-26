@@ -1,0 +1,17 @@
+.whitelogo-leave {
+	opacity: 1;
+}
+
+.whitelogo-leave.whitelogo-leave-active {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.herocontent-enter {
+	opacity: 0;
+}
+
+.herocontent-enter.herocontent-enter-active {
+	opacity: 1;
+	transition: opacity 0.5s ease-in;
+}

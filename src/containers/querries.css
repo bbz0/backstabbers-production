@@ -1,0 +1,192 @@
+@media only screen and (max-width: 1200px) {
+
+	.hero--content {
+		margin-top: 40%;
+	}
+
+	.work--video iframe {
+		max-height: 700px;
+	}
+
+	.more--container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.hero--content {
+		margin-top: 20%;
+	}
+
+	.works--container, .more--container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.work--video iframe {
+		max-height: 600px;
+	}
+
+	.contact--form {
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.nav--link, .contact--button {
+		display: none;
+	}
+
+	.nav--burger {
+		display: block;
+	}
+
+	.mobile--nav {
+		display: none;
+	}
+
+	.mobile--navbar--nav .nav--link:link,
+	.mobile--navbar--nav .nav--link:visited,
+	.mobile--navbar--nav .contact--button {
+		display: block;
+	}
+
+	.hero--content {
+		margin-top: 30%;
+	}
+
+	.tags--container, .works--container, .more--container, .team--container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.work {
+		height: 100%;
+		max-height: 350px;
+	}
+
+	.work--thumb {
+		height: 70%;
+	}
+
+	.work--title {
+		padding: 10px;
+	}
+
+	.single--work--text {
+		display: block;
+	}
+
+	.single--work--title--cont {
+		margin-bottom: 15px;
+	}
+
+	.single--work--body {
+		width: 100%;
+	}
+
+	.work--video iframe {
+		max-height: 500px;
+	}
+
+	.about--container {
+		display: block;
+	}
+
+	.about--img, .about--text {
+		width: 100%;
+	}
+
+	.about--img {
+		margin-bottom: 30px;
+	}
+
+	.clients--container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.client {
+		height: 200px;
+	}
+
+	.footer--content {
+		display: block;
+	}
+
+	.footer--nav {
+		margin-top: 20px;
+	}
+
+	.footer--link:link,
+	.footer--link:visited {
+		display: block;
+		margin-left: 0;
+		padding: 5px 0;
+	}
+
+	.contact--modal {
+		padding: 20px;
+	}
+
+	.contact--form {
+		max-width: 700px;
+		padding: 15px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.hero--logo {
+		height: 300px;
+	}
+
+	.hero--content {
+		margin-top: 30%;
+	}
+
+	.hero--text {
+		font-size: 250%;
+	}
+
+	.call--to--action:link,
+	.call--to--action:visited {
+		font-size: 150%;
+		padding-bottom: 10px;
+	}
+
+	.work--video iframe {
+		max-height: 400px;
+	}
+
+	.clients--container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.more--container, .works--container, .team--container {
+		grid-template-columns: 1fr;
+	}
+
+	.about--tagline {
+		line-height: 110%
+	}
+
+	.contact--form {
+		max-height: 500px;
+		height: 100%;
+		padding: 15px;
+	}
+
+	.email--form {
+		margin-top: 10px;
+		font-size: 100%;
+	}
+
+	.text--input {
+		margin-bottom: 10px;
+	}
+
+	.submit--button {
+		padding: 15px;
+	}
+
+} 

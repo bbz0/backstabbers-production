@@ -1,0 +1,7 @@
+{
+    "require": {
+        "vimeo/vimeo-api": "^3.0",
+        "vlucas/phpdotenv": "^3.5",
+        "sendgrid/sendgrid": "^7.3"
+    }
+}

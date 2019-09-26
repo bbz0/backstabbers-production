@@ -1,0 +1,44 @@
+.mobilenav-enter {
+	transform: translate(0, -300px);
+}
+
+.mobilenav-enter.mobilenav-enter-active {
+	transform: translate(0, 0);
+	transition: transform 0.2s ease-in;
+}
+
+.mobilenav-leave {
+	transform: translate(0, 0);
+	transition: transform 0.2s ease-in;
+}
+
+.mobilenav-leave.mobilenav-leave-active {
+	transform: translate(0, -300px);
+}
+
+.contactform-enter {
+	opacity: 0;
+}
+
+.contactform-enter.contactform-enter-active {
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.contactform-leave {
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.contactform-leave.contactform-leave-active {
+	opacity: 0;
+}
+
+.nav-enter {
+	opacity: 0;
+}
+
+.nav-enter.nav-enter-active {
+	opacity: 1;
+	transition: opacity 0.5s ease-in;
+}
